@@ -20,14 +20,14 @@ function playGame(replay) {
   var LETTERS = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
   var animations = {'a':[],'b':[],'c':[],'d':[],'e':[],'f':[],'g':[],'h':[],'i':[],'j':[],'k':[],'l':[],'m':[],'n':[],'o':[],'p':[],'q':[],'r':[],'s':[],'t':[],'u':[],'v':[],'w':[],'x':[],'y':[],'z':[]};
   var gameOn = true;
-  var timeOffset = 2000; 
+  var timeOffset = 1000; //EasyMode = 2000 , HardMode = 500
   var DURATION = 10000;
   var main = document.getElementById('main');
   var header = document.querySelector('header');
   var scoreElement = document.getElementById('score');
   var score = parseFloat(scoreElement.textContent);
   var rate = 1;
-  var RATE_INTERVAL = .05;
+  var RATE_INTERVAL = .15; // EasyMode = 0.05 , HardMode = 0.25
   var misses = 0;
 
   
